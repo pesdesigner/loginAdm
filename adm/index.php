@@ -1,4 +1,5 @@
 <?php
+session_start();
 ob_start();
 
 define('R4F5CC', true);
@@ -6,5 +7,3 @@ define('R4F5CC', true);
 require './vendor/autoload.php';
 $url = new Core\ConfigController();
 $url->carregar();
-
-

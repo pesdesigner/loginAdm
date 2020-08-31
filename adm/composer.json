@@ -1,8 +1,8 @@
 {
-    "description": "Web Site com MVC",
+    "description": "Web site com MVC",
     "authors": [
         {
-            "name": "Paulo Eduardo",
+              "name": "Paulo Eduardo",
             "email": "contato@graficoeweb.com.br"
         }
     ],
@@ -12,5 +12,5 @@
             "Core\\": "core"
         }
     },
-       "require": {}
+    "require": {}
 }

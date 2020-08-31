@@ -32,6 +32,6 @@ class ConfigController {
     }   
     
     private function config(){
-        define('URL','http://localhost/WebSite/projeto/');
+        define('URL','http://localhost/loginAdm/');
     }
 }
