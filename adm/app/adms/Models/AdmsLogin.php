@@ -9,11 +9,11 @@ if (!defined('R4F5CC')) {
 
 use PDO;
 /**
- * Description of admsLogin
+ * Description of AdmsLogin
  *
  * @author paulo
  */
-class admsLogin extends Conn
+class AdmsLogin extends Conn
 {
 
     private $conn;

@@ -20,7 +20,7 @@ class Login
         
         $this->dadosForm = filter_input_array(INPUT_POST, FILTER_DEFAULT);
         if(!empty($this->dadosForm['SendLogin'])){
-            $valLogin = new \App\adms\Models\admsLogin();
+            $valLogin = new \App\adms\Models\AdmsLogin();
             $valLogin->login($this->dadosForm);
             if($valLogin->getResultado()){
                 $urlDestino = URLADM . "home";

@@ -37,7 +37,7 @@ class Permissao
     }
 
     private function pgRestrita(): void {
-        $this->pgRestrita = ["home"];
+        $this->pgRestrita = ["home", "view"];
 
         if (in_array($this->urlController, $this->pgRestrita)) {
             $this->verificarLogin();
