@@ -7,9 +7,23 @@ if(!defined('R4F5CC')){
 
 <div class="container">
 
-    <h1>Detalhes da página Home</h1>
+   <h1>Detalhes da página home</h1>
     <hr>
-    <h2>Detalhes do topo</h2>
+    <?php
+    if(isset($_SESSION['msg'])){
+        echo $_SESSION['msg'];
+        unset($_SESSION['msg']);
+    }
+    ?>
+  
+    <div class="d-flex">
+        <div class="mr-auto p-2">
+           <h2>Detalhes do topo</h2>
+        </div>
+        <div class="p-2">
+            <a href="<?php echo URLADM ?>topo" class="btn btn-warning btn-sm">Editar</a>
+        </div>
+    </div>
     
     <?php
     if (!empty($this->dados['home']['topo'])) {
