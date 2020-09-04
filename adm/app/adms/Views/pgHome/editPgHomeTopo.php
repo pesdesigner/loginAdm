@@ -16,7 +16,7 @@ if(isset($this->dados['topo'])){
             <h1>Editar página home</h1>
         </div>
         <div class="p-2">
-            <a href="<?php echo URLADM ?>view" class="btn btn-success btn-sm">Visualizar</a>
+            <a href="<?php echo URLADM ?>view" class="btn btn-success btn-sm mt-3">Visualizar</a>
         </div>
     </div>
     <hr>

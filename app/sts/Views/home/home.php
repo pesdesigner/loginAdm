@@ -31,7 +31,7 @@
     </nav>
 
     <div class="jumbotron text-center descr-top" 
-  style="background-image: url('<?php echo URL ?>app/sts/assets/images/home_topo/<?php
+  style="background-image: url('<?php echo URLADM ?>app/adms/assets/imagens/home_topo/<?php
   echo $this->dados['topo']['imagem_topo'];?>')">
         <h2><a name="inicio" class="link"></a></h2>
         <div class="container">

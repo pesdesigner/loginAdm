@@ -33,5 +33,6 @@ class ConfigController {
     
     private function config(){
         define('URL','http://localhost/loginAdm/');
+        define('URLADM','http://localhost/loginAdm/adm/');
     }
 }

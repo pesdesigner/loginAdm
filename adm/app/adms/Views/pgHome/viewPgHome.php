@@ -21,7 +21,7 @@ if(!defined('R4F5CC')){
            <h2>Detalhes do topo</h2>
         </div>
         <div class="p-2">
-            <a href="<?php echo URLADM ?>topo" class="btn btn-warning btn-sm">Editar</a>
+            <a href="<?php echo URLADM ?>topo" class="btn btn-warning btn-sm mt-3">Editar</a>
         </div>
     </div>
     
@@ -33,8 +33,16 @@ if(!defined('R4F5CC')){
         
         <dt class="col-sm-3">Imagem</dt>
         <dd class="col-sm-9">
-            <img src="<?php echo URLADM . 'app/adms/assets/imagens/home_topo/' . $imagem_topo; ?>" width="250" height="141">
-     
+            
+        <div class="img-perfil">
+  <img src="<?php echo URLADM . 'app/adms/assets/imagens/home_topo/' . $imagem_topo; ?>" width="250" height="141">
+  <div class="edit">
+      <a href="<?php echo URLADM ?>topoimg" class="btn btn-info btn-sm">
+          <i class="fas fa-edit"></i>
+      </a>
+  </div>
+        </div>
+           
         </dd>
         
         <dt class="col-sm-3">Título</dt>
@@ -57,7 +65,14 @@ if(!defined('R4F5CC')){
 
 ?>
     <hr>
-    <h2>Detalhes dos Serviços</h2>
+    <div class="d-flex">
+        <div class="mr-auto p-2">
+           <h2>Detalhes do serviço</h2>
+        </div>
+        <div class="p-2">
+            <a href="<?php echo URLADM ?>serv" class="btn btn-warning btn-sm mt-3">Editar</a>
+        </div>
+    </div>
     
     <?php
     if (!empty($this->dados['home']['serv'])) {
@@ -118,7 +133,14 @@ if(!defined('R4F5CC')){
     }
 ?>
     <hr>
-    <h2>Detalhes da Ação</h2>
+    <div class="d-flex">
+        <div class="mr-auto p-2">
+           <h2>Detalhes da Ação</h2>
+        </div>
+        <div class="p-2">
+            <a href="<?php echo URLADM ?>acao" class="btn btn-warning btn-sm mt-3">Editar</a>
+        </div>
+    </div>
     
     <?php
     if (!empty($this->dados['home']['acao'])) {
@@ -154,7 +176,14 @@ if(!defined('R4F5CC')){
     }
 ?>
     <hr>
-    <h2>Detalhes do Contato</h2>
+    <div class="d-flex">
+        <div class="mr-auto p-2">
+           <h2>Detalhes do Contato</h2>
+        </div>
+        <div class="p-2">
+            <a href="<?php echo URLADM ?>contato" class="btn btn-warning btn-sm mt-3">Editar</a>
+        </div>
+    </div>   
     
     <?php
     if (!empty($this->dados['home']['contato'])) {
